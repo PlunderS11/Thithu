@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/hinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dauchuyendoi" />
+
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cáp chuyển từ Cổng  USB sang PS2..."
+        app:layout_constraintEnd_toEndOf="@+id/hinh"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hinh"
+        app:layout_constraintTop_toBottomOf="@+id/hinh" />
+
+    <RatingBar
+        android:id="@+id/soSao"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ten"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ten"
+        app:layout_constraintTop_toBottomOf="@+id/ten" />
+
+    <TextView
+        android:id="@+id/danhGIa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="18"
+        app:layout_constraintBottom_toBottomOf="@+id/soSao"
+        app:layout_constraintStart_toEndOf="@+id/soSao"
+        app:layout_constraintTop_toTopOf="@+id/soSao"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/soSao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/soSao"
+        app:layout_constraintTop_toBottomOf="@+id/soSao" />
+
+    <TextView
+        android:id="@+id/tiLe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="-30%"
+        app:layout_constraintBottom_toBottomOf="@+id/gia"
+        app:layout_constraintStart_toEndOf="@+id/gia"
+        app:layout_constraintTop_toTopOf="@+id/gia"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
